@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="body">
+
+        <center>
+            <div id="head">
+                <h1>CLASS 3 ASSIGNMENT </h1>
+                <br>
+                <h3>ENTER COURSE MARKS:</h3> <input type="number" id="num1">
+                <br>
+                <br/>
+                <button class="btn btn-primary" onclick="num1()">CALCULATE GRADE</button>
+                <b>
+                    <p id="demo"> </p>
+                </b>
+
+            </div>
+
+        </center>
+    </div>
+    <script>
+        function num1() {
+            let num1 = document.getElementById("num1").value;
+
+            if (num1 > 85) {
+                document.getElementById("demo").innerHTML = "CONGRATULATIONS YOUR GRADE IS 'A'!!!";
+            }
+            else if (num1 >= 80 && num1 < 85) {
+                document.getElementById("demo").innerHTML = "CONGRATULATIONS YOUR GRADE IS 'A-'!!!";
+            }
+            else if (num1 >= 75 && num1 < 80) {
+                document.getElementById("demo").innerHTML = "CONGRATULATIONS YOUR GRADE IS 'B+'!!!";
+            }
+            else if (num1 >= 70 && num1 < 75) {
+                document.getElementById("demo").innerHTML = "CONGRATULATIONS YOUR GRADE IS 'B-'!!!";
+            }
+            else if (num1 >= 65 && num1 < 70) {
+                document.getElementById("demo").innerHTML = "CONGRATULATIONS YOUR GRADE IS 'C'!!!";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "SORRY! YOU ARE FAILED!!";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
